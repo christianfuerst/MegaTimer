@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/rcBackgroundColor"
+        card_view:cardCornerRadius="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/cardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView_title"
+                android:text="Placeholder Timer"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView_length"
+                android:text="00:00:00"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:textStyle="normal|bold" />
+
+            <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                app:rcBackgroundColor="@color/rcBackgroundColor"
+                app:rcBackgroundPadding="5dp"
+                app:rcIconSize="40dp"
+                app:rcIconPadding="5dp"
+                app:rcRadius="10dp"
+                android:layout_below="@+id/textView_title"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+            </com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
